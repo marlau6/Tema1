@@ -7,15 +7,15 @@ params:
   lang: ES
 lang: "`r switch(params$lang, ES = 'es-ES', EN = 'en-US')`"
 output:
+  bookdown::pdf_document2:
+    toc: true
+    toc_depth: 3
+    number_sections: false
   bookdown::html_document2:
     echo: true
     number_sections: false
     theme: spacelab
     toc: true
-  bookdown::pdf_document2:
-    toc: true
-    toc_depth: 3
-    number_sections: false
 always_allow_html: true
 language:
   label:
